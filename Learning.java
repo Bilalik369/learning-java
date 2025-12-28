@@ -121,7 +121,7 @@ public class Learning {
     for(int num : tab){
         if(num == search){
             found = true;
-            break;
+            break;  
         }
     }
     if(found){
@@ -129,7 +129,7 @@ public class Learning {
     }else{
         System.out.println("elemn non trouve");
     }
-   
+   //hell
     
 
     }
