@@ -43,15 +43,32 @@
 // }
 
 
+// public class Learning {
+//   public static void main(String[] args) {
+
+//     int[] tab = {1 , 2 , 3 ,4};
+//     int sum = 0;
+//     for(int i = 0 ; i<tab.length ; i++){
+//         sum = sum + tab[i];
+//     }
+//     System.out.println(sum);
+       
+//     }
+// }
+
 public class Learning {
   public static void main(String[] args) {
 
-    int[] tab = {1 , 2 , 3 ,4};
-    int sum = 0;
-    for(int i = 0 ; i<tab.length ; i++){
-        sum = sum + tab[i];
+ int[] tab = {1  , 4 , 3 , 44 , 2 ,477};
+ 
+    int max = tab[0];
+    int min = tab[0];
+
+    for(int num : tab){
+        if(num > max) max = num;
+        if(num <min) min = num;
     }
-    System.out.println(sum);
-       
+    System.out.println("max " + max);
+    System.out.println("min " + min);
     }
 }
