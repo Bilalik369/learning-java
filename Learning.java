@@ -27,17 +27,31 @@
 // }
 
 
+// public class Learning {
+//   public static void main(String[] args) {
+
+//     int age  = Integer.parseInt(args[0]);
+
+//     System.out.println("entre votre age" + age);
+//     if(age >= 18){
+//         System.out.println("agee");
+//     }else{
+//         System.out.println("minore");
+//     }
+
+//     }
+// }
+
+
 public class Learning {
   public static void main(String[] args) {
 
-    int age  = Integer.parseInt(args[0]);
-
-    System.out.println("entre votre age" + age);
-    if(age >= 18){
-        System.out.println("agee");
-    }else{
-        System.out.println("minore");
+    int[] tab = {1 , 2 , 3 ,4};
+    int sum = 0;
+    for(int i = 0 ; i<tab.length ; i++){
+        sum = sum + tab[i];
     }
-
+    System.out.println(sum);
+       
     }
 }
