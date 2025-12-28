@@ -56,19 +56,82 @@
 //     }
 // }
 
+// public class Learning {
+//   public static void main(String[] args) {
+
+//  int[] tab = {1  , 4 , 3 , 44 , 2 ,477};
+ 
+//     int max = tab[0];
+//     int min = tab[0];
+
+//     for(int num : tab){
+//         if(num > max) max = num;
+//         if(num <min) min = num;
+//     }
+//     System.out.println("max " + max);
+//     System.out.println("min " + min);
+//     }
+// }
+
+
+// public class Learning {
+//   public static void main(String[] args) {
+
+//     int[] tab = {1  , 4 , 3 , 44 , 23 ,2};
+//     int sum = 0;
+//     for(int num : tab){
+//      sum += num;
+//     }
+
+//     double avrg = (double) sum / tab.length;
+//       System.out.println("moyen "  + avrg); 
+//     }
+    
+// }
+
+// public class Learning {
+//   public static void main(String[] args) {
+//     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
+   
+//     int indexRemove = 2;
+
+//     int[] newTab = new int[tab.length - 1];
+    
+//     for(int i = 0 , j = 0;i< tab.length ; i++){
+//         if(i!= indexRemove){
+//             newTab[j++] = tab[i];
+//         }
+        
+//     }
+//     for(int num : newTab){
+//         System.out.println(num);
+//     }
+
+    
+
+//     }
+// }
 public class Learning {
   public static void main(String[] args) {
+    int [] tab = {1 , 2 , 3 , 33, 2 ,9};
 
- int[] tab = {1  , 4 , 3 , 44 , 2 ,477};
- 
-    int max = tab[0];
-    int min = tab[0];
+    int search = 91;
+    boolean found = false;
 
     for(int num : tab){
-        if(num > max) max = num;
-        if(num <min) min = num;
+        if(num == search){
+            found = true;
+            break;
+        }
     }
-    System.out.println("max " + max);
-    System.out.println("min " + min);
+    if(found){
+        System.out.println("elmen trouve");
+    }else{
+        System.out.println("elemn non trouve");
+    }
+   
+    
+
     }
 }
+
