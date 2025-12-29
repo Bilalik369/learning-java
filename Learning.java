@@ -111,25 +111,81 @@
 
 //     }
 // }
+// public class Learning {
+//   public static void main(String[] args) {
+//     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
+
+//     int search = 91;
+//     boolean found = false;
+
+//     for(int num : tab){
+//         if(num == search){
+//             found = true;
+//             break;  
+//         }
+//     }
+//     if(found){
+//         System.out.println("elmen trouve");
+//     }else{
+//         System.out.println("elemn non trouve");
+//     }
+//    //hell
+    
+
+//     }
+// }
+
+// public class Learning {
+//   public static void main(String[] args) {
+//     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
+
+//     for(int i = tab.length -1 ; i>=0; i--){
+//         System.out.println(tab[i]);
+//     }
+
+    
+
+//     }
+// }
+
+
+// public class Learning {
+//   public static void main(String[] args) {
+//     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
+
+//     int min = tab[0];
+//     int max = tab[0];
+
+//     for( int num : tab){
+//         if(num > max) max = num;
+//         if(num <min) min = num ;
+//     }
+
+//     System.out.println("max :" + max);
+//     System.out.println("min :" + min);
+
+    
+
+//     }
+// }
+
+
 public class Learning {
   public static void main(String[] args) {
     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
-
-    int search = 91;
-    boolean found = false;
-
+    int count = 0;
+    
+ 
     for(int num : tab){
-        if(num == search){
-            found = true;
-            break;  
+        if(num % 2 ==0){
+            count++;
         }
     }
-    if(found){
-        System.out.println("elmen trouve");
-    }else{
-        System.out.println("elemn non trouve");
-    }
-   //hell
+
+    System.out.println("nbr des nbr pair :" + count);
+
+
+
     
 
     }
