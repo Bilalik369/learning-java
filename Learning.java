@@ -213,35 +213,69 @@ import java.util.Scanner;
 
 //     }
 // }
-import java.util.Scanner;
-public class Learning {
-    public static void main(String[] args){
+// import java.util.Scanner;
+// public class Learning {
+//     public static void main(String[] args){
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.println("entre le premier nbr ");
+//         System.out.println("entre le premier nbr ");
 
-        int a = sc.nextInt();
+//         int a = sc.nextInt();
 
-        System.out.println("entre le deuxieme nbr ");
+//         System.out.println("entre le deuxieme nbr ");
 
-        int b = sc.nextInt();
+//         int b = sc.nextInt();
 
-        System.out.println("entre le troisuem nbr ");
+//         System.out.println("entre le troisuem nbr ");
 
-        int c = sc.nextInt();
+//         int c = sc.nextInt();
 
-        if(a > b &&  a > c){
-            System.out.println("le grand valeur" + a);
-        }else if(b > a && b > c){
-            System.out.println("le grand valeur /"+ b);
-        }else if(c > a && c > b){
-            System.out.println("le grand valeur : " + c);
-        }
+//         if(a > b &&  a > c){
+//             System.out.println("le grand valeur" + a);
+//         }else if(b > a && b > c){
+//             System.out.println("le grand valeur /"+ b);
+//         }else if(c > a && c > b){
+//             System.out.println("le grand valeur : " + c);
+//         }
             
+//         }
+
+//     }
+
+
+
+import java.util.Scanner;
+
+
+// public class Learning {
+//   public static void main(String[] args) {
+//    String maChaine = "Une premier phrase. Et voici une deuxiem.";
+
+//    char[] arr = maChaine.toCharArray();
+
+//    int nbr = arr.length;
+
+//    System.out.println(nbr);
+//     }
+// }
+
+
+public class Learning {
+    public static void main(String[] args) {
+
+        String maChaine = "Une premier phrase. Et voici une deuxiem.";
+
+        char[] arr = maChaine.toCharArray();
+
+        int count = 0;
+
+        for (char c : arr) {
+            if (Character.isLetter(c)) {  
+                count++;
+            }
         }
 
+        System.out.println("Nombre de lettres : " + count);
     }
-
-
-
+}
