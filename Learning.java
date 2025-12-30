@@ -170,24 +170,48 @@
 // }
 
 
-public class Learning {
-  public static void main(String[] args) {
-    int [] tab = {1 , 2 , 3 , 33, 2 ,9};
-    int count = 0;
+// public class Learning {
+//   public static void main(String[] args) {
+//     int [] tab = {1 , 2 , 3 , 33, 2 ,9};
+//     int count = 0;
     
  
-    for(int num : tab){
-        if(num % 2 ==0){
-            count++;
-        }
-    }
+//     for(int num : tab){
+//         if(num % 2 ==0){
+//             count++;
+//         }
+//     }
 
-    System.out.println("nbr des nbr pair :" + count);
+//     System.out.println("nbr des nbr pair :" + count);
 
 
 
     
+
+//     }
+// }
+
+import java.util.Scanner;
+
+
+public class Learning {
+  public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+
+   System.out.println("entre votre premier nbr");
+
+   int a = sc.nextInt();
+   System.out.println("entr votre deuxiem nbr");
+   int b = sc.nextInt();
+   if(a == 0 || b == 0) {
+    System.out.println("produit et 0");
+   }else if (a > 0 || b > 0 && a <0 || b<0){
+    System.out.println("les signe de produit et positive ");
+   }else if( a > 0 || b <0 && a<0 || b >0){
+    System.out.println("le produitet negative");
+   }
 
     }
 }
+
 
