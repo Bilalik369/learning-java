@@ -194,24 +194,54 @@
 import java.util.Scanner;
 
 
+// public class Learning {
+//   public static void main(String[] args) {
+//    Scanner sc = new Scanner(System.in);
+
+//    System.out.println("entre votre premier nbr");
+
+//    int a = sc.nextInt();
+//    System.out.println("entr votre deuxiem nbr");
+//    int b = sc.nextInt();
+//    if(a == 0 || b == 0) {
+//     System.out.println("produit et 0");
+//    }else if (a > 0 || b > 0 && a <0 || b<0){
+//     System.out.println("les signe de produit et positive ");
+//    }else if( a > 0 || b <0 && a<0 || b >0){
+//     System.out.println("le produitet negative");
+//    }
+
+//     }
+// }
+import java.util.Scanner;
 public class Learning {
-  public static void main(String[] args) {
-   Scanner sc = new Scanner(System.in);
+    public static void main(String[] args){
 
-   System.out.println("entre votre premier nbr");
+        Scanner sc = new Scanner(System.in);
 
-   int a = sc.nextInt();
-   System.out.println("entr votre deuxiem nbr");
-   int b = sc.nextInt();
-   if(a == 0 || b == 0) {
-    System.out.println("produit et 0");
-   }else if (a > 0 || b > 0 && a <0 || b<0){
-    System.out.println("les signe de produit et positive ");
-   }else if( a > 0 || b <0 && a<0 || b >0){
-    System.out.println("le produitet negative");
-   }
+        System.out.println("entre le premier nbr ");
+
+        int a = sc.nextInt();
+
+        System.out.println("entre le deuxieme nbr ");
+
+        int b = sc.nextInt();
+
+        System.out.println("entre le troisuem nbr ");
+
+        int c = sc.nextInt();
+
+        if(a > b &&  a > c){
+            System.out.println("le grand valeur" + a);
+        }else if(b > a && b > c){
+            System.out.println("le grand valeur /"+ b);
+        }else if(c > a && c > b){
+            System.out.println("le grand valeur : " + c);
+        }
+            
+        }
 
     }
-}
+
 
 
