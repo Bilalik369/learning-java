@@ -213,6 +213,7 @@ import java.util.Scanner;
 
 //     }
 // }
+
 // import java.util.Scanner;
 // public class Learning {
 //     public static void main(String[] args){
@@ -261,21 +262,53 @@ import java.util.Scanner;
 // }
 
 
+// public class Learning {
+//     public static void main(String[] args) {
+
+//         String maChaine = "Une premier phrase. Et voici une deuxiem.";
+
+//         char[] arr = maChaine.toCharArray();
+
+//         int count = 0;
+
+//         for (char c : arr) {
+//             if (Character.isLetter(c)) {  
+//                 count++;
+//             }
+//         }
+
+//         System.out.println("Nombre de lettres : " + count);
+//     }
+// }
+
+import java.util.Scanner;
+
 public class Learning {
     public static void main(String[] args) {
 
-        String maChaine = "Une premier phrase. Et voici une deuxiem.";
+        Scanner sc = new Scanner(System.in);
 
-        char[] arr = maChaine.toCharArray();
+        System.out.print("Entrez le numéro du mois (de 1 à 12) : ");
+        int mois = sc.nextInt();
 
-        int count = 0;
+        if (mois == 1 || mois == 3 || mois == 5 || mois == 7 ||
+            mois == 8 || mois == 10 || mois == 12) {
 
-        for (char c : arr) {
-            if (Character.isLetter(c)) {  
-                count++;
-            }
+            System.out.println("Nombre de jours : 31");
+
+        } else if (mois == 4 || mois == 6 || mois == 9 || mois == 11) {
+
+            System.out.println("Nombre de jours : 30");
+
+        } else if (mois == 2) {
+
+            System.out.println("Nombre de jours : 28");
+
+        } else {
+
+            System.out.println("Erreur : numéro du mois invalide !");
         }
 
-        System.out.println("Nombre de lettres : " + count);
+        
     }
 }
