@@ -283,32 +283,55 @@ import java.util.Scanner;
 
 import java.util.Scanner;
 
-public class Learning {
-    public static void main(String[] args) {
+// public class Learning {
+//     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+//         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Entrez le numéro du mois (de 1 à 12) : ");
-        int mois = sc.nextInt();
+//         System.out.print("Entrez le numéro du mois (de 1 à 12) : ");
+//         int mois = sc.nextInt();
 
-        if (mois == 1 || mois == 3 || mois == 5 || mois == 7 ||
-            mois == 8 || mois == 10 || mois == 12) {
+//         if (mois == 1 || mois == 3 || mois == 5 || mois == 7 ||
+//             mois == 8 || mois == 10 || mois == 12) {
 
-            System.out.println("Nombre de jours : 31");
+//             System.out.println("Nombre de jours : 31");
 
-        } else if (mois == 4 || mois == 6 || mois == 9 || mois == 11) {
+//         } else if (mois == 4 || mois == 6 || mois == 9 || mois == 11) {
 
-            System.out.println("Nombre de jours : 30");
+//             System.out.println("Nombre de jours : 30");
 
-        } else if (mois == 2) {
+//         } else if (mois == 2) {
 
-            System.out.println("Nombre de jours : 28");
+//             System.out.println("Nombre de jours : 28");
 
-        } else {
+//         } else {
 
-            System.out.println("Erreur : numéro du mois invalide !");
-        }
+//             System.out.println("Erreur : numéro du mois invalide !");
+//         }
 
         
+//     }
+// }
+
+public class Learning {
+    public static void main(String[] args) {
+        
+        System.out.println("Nombres d'Armstrong supérieurs à 100 :");
+
+        for (int n = 100; n <= 999; n++) {
+
+            int temp = n;
+            int somme = 0;
+
+            while (temp != 0) {
+                int chiffre = temp % 10;
+                somme += chiffre * chiffre * chiffre;
+                temp = temp / 10;
+            }
+
+            if (somme == n) {
+                System.out.println(n);
+            }
+        }
     }
 }
