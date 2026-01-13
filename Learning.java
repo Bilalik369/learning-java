@@ -361,53 +361,74 @@ import java.util.Scanner;
 //     }
 // }
 
-import java.util.Scanner;
+// import java.util.Scanner;
+
+// public class Learning {
+//     public static void main(String[] args) {
+
+//         Scanner sc = new Scanner(System.in);
+
+//         int n;
+//         int sum = 0;
+//         int[] t = new int[50];
+
+//         do {
+//             System.out.println("Entrez la dimension du tableau (1 à 50):");
+//             n = sc.nextInt();
+//         } while (n < 1 || n > 50);
+
+//         for (int i = 0; i < n; i++) {
+//             System.out.print("tab[" + i + "] = ");
+//             t[i] = sc.nextInt();
+//             sum += t[i];
+//         }
+
+//         System.out.println("Contenu du tableau:");
+//         for (int i = 0; i < n; i++) {
+//             System.out.println("tab[" + i + "] = " + t[i]);
+//         }
+
+//         for(int i = 0 ; i< n - 1 ;i ++){
+//             for(int j = i + 1 ; j < n ; j++){
+//                 if(t[i] > t[j]){
+//                     int temp = t[i];
+//                     t[i] = t[j];
+//                     t[j]= temp;
+
+//                 }
+//             }
+
+//         }
+
+//         System.out.println("le table apre le tri");
+//         for(int i = 0 ; i < n ; i ++){
+//             System.out.println(t[i]);
+//         }
+
+//         System.out.println("la somme :" + sum);
+
+//         sc.close();
+//     }
+// }
+ 
 
 public class Learning {
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        int n;
-        int sum = 0;
-        int[] t = new int[50];
-
-        do {
-            System.out.println("Entrez la dimension du tableau (1 à 50):");
-            n = sc.nextInt();
-        } while (n < 1 || n > 50);
-
-        for (int i = 0; i < n; i++) {
-            System.out.print("tab[" + i + "] = ");
-            t[i] = sc.nextInt();
-            sum += t[i];
+    public static void main(String[] args){
+        class Persson  {
+        private int age ;
+        protected String name; 
+        public String city ;
+            
         }
 
-        System.out.println("Contenu du tableau:");
-        for (int i = 0; i < n; i++) {
-            System.out.println("tab[" + i + "] = " + t[i]);
-        }
-
-        for(int i = 0 ; i< n - 1 ;i ++){
-            for(int j = i + 1 ; j < n ; j++){
-                if(t[i] > t[j]){
-                    int temp = t[i];
-                    t[i] = t[j];
-                    t[j]= temp;
-
-                }
+        class Student extends Persson {
+            void test(){
+                
+                System.out.println(name);
+                System.out.println(city);
+                
             }
-
         }
 
-        System.out.println("le table apre le tri");
-        for(int i = 0 ; i < n ; i ++){
-            System.out.println(t[i]);
-        }
-
-        System.out.println("la somme :" + sum);
-
-        sc.close();
     }
 }
- 
