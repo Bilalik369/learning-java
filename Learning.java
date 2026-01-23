@@ -412,23 +412,190 @@ import java.util.Scanner;
 // }
  
 
-public class Learning {
-    public static void main(String[] args){
-        class Persson  {
-        private int age ;
-        protected String name; 
-        public String city ;
+// public class Learning {
+//     public static void main(String[] args){
+//         class Persson  {
+//         private int age ;
+//         protected String name; 
+//         public String city ;
             
-        }
+//         }
 
-        class Student extends Persson {
-            void test(){
+//         class Student extends Persson {
+//             void test(){
                 
-                System.out.println(name);
-                System.out.println(city);
+//                 System.out.println(name);
+//                 System.out.println(city);
                 
-            }
-        }
+//             }
+//         }
+
+//     }
+// }
+
+// class Point {
+//     private float x;
+//     private float y;
+
+    
+//     public Point(float x, float y) {
+//         this.x = x;
+//         this.y = y;
+//     }
+
+    
+//     public Point(float a) {
+//         this.x = a;
+//         this.y = a;
+//     }
+
+    
+//     public Point() {
+//         this.x = 0;
+//         this.y = 0;
+//     }
+
+ 
+//     public void changerX(float a) {
+//         this.x = a;
+//     }
+//     public float retournerX(){
+//         return x;
+//     }
+//     public Point (Point P){
+//         this.x = P.x;
+//         this.y = P.y;
+//     }
+// }
+
+// public class Learning {
+//     public static void main(String[] args) {
+//     //    Point p1 = new Point();
+//     //    Point p2 =p1;
+//     //    p2.changerX(4);
+
+//     //    System.out.println(p2.retournerX());
+
+//     Point p1 = new Point(3 , 4);
+//     Point p2 = new Point(p1);
+//     p2.changerX(10);
+//     System.out.println(p1.retournerX());
+
+
+
+//     }
+// }
+
+import java.util.Scanner;
+class Employe {
+    private int num ;
+    private String nom;
+    private String prenom ;
+    private double salire ;
+    private String date ;
+
+    public Employe (int num , String nom , String prenom , double salire , String date){
+        this.num = num;
+        this.nom = nom;
+        this.prenom= prenom;
+        this.salire = salire ;
+        this.date = date ;
+
 
     }
+    public Employe (){
+        this.num = 0;
+        this.nom = "";
+        this.prenom = "";
+        this.salire = 0;
+        this.date = "";
+
+    }
+
+    public Employe (Employe e){
+
+        this.num = e.num;
+        this.nom = e.nom;
+        this.prenom = e.prenom;
+        this.salire = e.salire;
+        this.date = e.date;
+    }
+
+    public int getNum () {
+        return num ;
+    }
+
+    public String getNom() {
+        return nom ;
+    }
+    public String getPrenom(){
+        return prenom;
+    }
+    public double getSalaire() {
+        return salire;
+    }
+    public String getDate(){
+        return date;
+    }
+
+    public void setNum(int num) {
+        this.num = num;
+    }
+     public void setNom (String nom) {
+        this.nom = nom ;
+     }
+     public void setPrenom(String prenom ){
+        this.prenom = prenom ; 
+     }
+     public void setSalaire(double salire){
+        this.salire = salire;
+     }
+     public void setDate(String date){
+        this.date = date;
+
+     }
+
+
+     public void lecteur(){
+    Scanner sc = new Scanner(System.in);
+
+    System.out.println("Num :");
+    num = sc.nextInt();
+    sc.nextLine(); 
+
+    System.out.println("Nom :");
+    nom = sc.nextLine();
+
+    System.out.println("Prenom :");
+    prenom = sc.nextLine();
+
+    System.out.println("Salaire :");
+    salire = sc.nextDouble();
+    sc.nextLine(); 
+
+    System.out.println("Date :");
+    date = sc.nextLine();
 }
+
+     public void affichage(){
+        System.out.println("Num :" + num);
+        System.out.println("Nom :" + nom);
+        System.out.println("prenom :" + prenom);
+        System.out.println("Salaire :" + salire);
+        System.out.println("Date :" + date);
+     }
+
+
+
+}
+
+
+public class Learning{
+ public static void main(String[] args){
+    Employe e1 = new Employe();
+    e1.lecteur();
+    e1.affichage();
+ }
+}
+
+  
