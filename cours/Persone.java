@@ -4,6 +4,8 @@ public class Persone {
     protected String Nom ;
     protected int id ;
 
+    
+
     public int getId(){
         return id;
     }
@@ -12,14 +14,19 @@ public class Persone {
     }
 
     public void setId(int id){
-        id = id;
+     this.id = id;
 
     }
-    public void setNom(String nom){
-        nom = nom ;
+    public void setNom(String Nom){
+        this.Nom = Nom ;
     }
   
-    
+   public String toString() {
+        return "Persone {" +
+               "id = " + id +
+               ", nom = '" + Nom + '\'' +
+               '}';
+    }
 }
 
 
