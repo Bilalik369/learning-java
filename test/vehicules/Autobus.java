@@ -1,4 +1,4 @@
-package vehicules;
+package test.vehicules;
 
 public class Autobus {
     public void hello(){

@@ -1,5 +1,5 @@
 package test;
-import vehicules.*;
+import test.vehicules.*;
 
 public class Test {
 

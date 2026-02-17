@@ -1,4 +1,4 @@
-package cours;
+package test.cours;
 
 public class Persone {
     protected String Nom ;
